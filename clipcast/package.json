@@ -1,0 +1,36 @@
+{
+  "name": "clipcast",
+  "version": "1.0.0",
+  "description": "A collaborative platform for sharing and managing clips.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/src/index.js",
+    "build": "tsc",
+    "test": "echo \"No tests specified\" && exit 0",
+    "dev": "concurrently \"npm run start\" \"npm run frontend\"",
+    "frontend": "cd frontend && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/clipcast.git"
+  },
+  "keywords": [
+    "clips",
+    "collaboration",
+    "media"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.3",
+    "concurrently": "^6.2.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

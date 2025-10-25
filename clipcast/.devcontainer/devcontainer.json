@@ -1,0 +1,19 @@
+{
+  "name": "ClipCast",
+  "dockerFile": "Dockerfile",
+  "context": "..",
+  "appPort": [
+    "3000",
+    "5000"
+  ],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-azuretools.vscode-docker",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint"
+  ],
+  "postCreateCommand": "npm install --prefix backend && npm install --prefix frontend",
+  "remoteUser": "vscode"
+}
